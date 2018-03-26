@@ -1,6 +1,8 @@
+/* A small html / css / javascript framework built by members of GA Sydney WDi26 */
+
 * {
-  /* background-color: pink; */
-  border: red solid 1px;
+  /* Uncomment line below for designing layout; */
+  /* border: red solid 1px; */
 };
 
 html {
@@ -32,10 +34,16 @@ nav li {
 
 nav .left {
   padding-left: 1em;
+  padding-top: 0.3em;
 }
 
 nav .right {
   padding-right: 1em;
+    padding-top: 0.3em;
+}
+
+nav .center {
+  padding-top: 0.1em;
 }
 
 body {
@@ -43,10 +51,12 @@ body {
   font-family: sans-serif;
 }
 
-nav ul {
-  /* margin: 0; */
-  padding: 0;
+ul {
   list-style: none;
+}
+
+nav ul {
+  padding: 0;
   display: flex;
 }
 
@@ -63,6 +73,8 @@ p {
   text-align: left;
 }
 
+
+
 .container {
   width: calc(100% - 40px);
   max-width: 1200px;
@@ -70,14 +82,13 @@ p {
   margin-top: 6em;
 }
 
-.flex-center {
+.space-tight {
   /* the elements in this div will be mashed together */
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 1em;
 }
-
 
 .space-around {
   /* The elements in this div will be evenly spaced,
@@ -97,11 +108,24 @@ p {
 }
 
 
+.col-1-2 {
+  width: 45%;
+}
+.col-1-4 {
+  width: 20%;
+}
+
+.row-1-4 {
+  height: 25vh;
+}
+
+
+
 
 #space-demo p {
   max-width: 10em;
   /* This is really to make sure there is space around  */
-  /* for the flex-center-space class above */
+  /* for the space-tight-space class above */
 }
 
 .flex-1 {
@@ -158,19 +182,19 @@ p {
 
 
 .spaced-items {
-  padding: 1em;
+  padding: 0.4em;
 }
 
 .spaced-items > :first-child {
-  margin-top: 3em;
+  margin-top: 1em;
 }
 
 .spaced-items > :last-child {
-  margin-bottom: 3em;
+  margin-bottom: 1em;
 }
 
 .spaced-items > * + * {
-  margin-top: 1em;
+  margin-top: 0.4em;
 }
 
 
@@ -194,4 +218,20 @@ p {
 
 .fullscreen {
     min-height: 100vh;
+}
+
+.accent-line-1 {
+  border-bottom: 0.35em red solid;
+  border-top-left-radius: 0.7em;
+  border-top-right-radius: 0.7em;
+}
+.accent-line-2 {
+  border-right: 0.35em blue solid;
+  border-top-left-radius: 0.7em;
+  border-bottom-left-radius: 0.7em;
+}
+.accent-line-3 {
+  border-left: 0.35em gold solid;
+  border-bottom-right-radius: 0.7em;
+  border-top-right-radius: 0.7em;
 }

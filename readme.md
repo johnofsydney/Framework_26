@@ -4,7 +4,7 @@
 
 ### Aims
 - practice collaboration using Git / GitHub
-- create a CSS framework that is visually pleasing, lightweight, has wide browser support, and is simple and fun to use
+- create a CSS framework that is visually pleasing, responsive and adaptive, lightweight, has wide browser support, and is simple and fun to use
 - practice flexbox and grid
 - create the necessary javascript to interact with and control DOM elements defined by this CSS
 - create clear HTML example pages and instructions
@@ -12,12 +12,11 @@
 
 ### To Do
 - media queries to crunch nav bar to hamburger menu for phone sized screen
-- nameing convention
-- color themes
--- color variables
+- naming convention
+- color themes (color variables)
 - font themes
 - refactor
-- split up the example page into several smaller more focused pages
+- split up the example page into several smaller more focused pages. add instructions.
 
 
 #### Other Examples
