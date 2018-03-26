@@ -2,6 +2,8 @@
 
 ## A small html / css / javascript framework built by members of GA Sydney WDi26
 
+[https://johnofsydney.github.io/Framework_26/]
+
 ### Aims
 - practice collaboration using Git / GitHub
 - create a CSS framework that is visually pleasing, responsive and adaptive, lightweight, has wide browser support, and is simple and fun to use
