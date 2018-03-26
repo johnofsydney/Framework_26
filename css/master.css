@@ -1,0 +1,197 @@
+* {
+  /* background-color: pink; */
+  border: red solid 1px;
+};
+
+html {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  position:fixed;
+  /* These next two lines are most of what is defined below in
+  .space-between - They are here so that we dont have to use
+  .space-between, becuase we don't want the padding section for
+  that style  */
+  display: flex;
+  justify-content: space-between;
+
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  padding: 0;
+}
+
+nav li {
+  padding: 1em;
+}
+
+nav .left {
+  padding-left: 1em;
+}
+
+nav .right {
+  padding-right: 1em;
+}
+
+body {
+  text-align: center;
+  font-family: sans-serif;
+}
+
+nav ul {
+  /* margin: 0; */
+  padding: 0;
+  list-style: none;
+  display: flex;
+}
+
+
+a {
+  color: inherit;
+}
+
+img {
+  max-width: 100%;
+}
+
+p {
+  text-align: left;
+}
+
+.container {
+  width: calc(100% - 40px);
+  max-width: 1200px;
+  margin: 0 auto;
+  margin-top: 6em;
+}
+
+.flex-center {
+  /* the elements in this div will be mashed together */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1em;
+}
+
+
+.space-around {
+  /* The elements in this div will be evenly spaced,
+  with half a space on the left of all elements
+  and half a space on the right of all elements */
+  display: flex;
+  justify-content: space-around;
+  padding: 1em;
+}
+
+.space-between {
+  /* The elements in this div will be evenly spaced,
+  there will be no space on left or right of all elements */
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+}
+
+
+
+#space-demo p {
+  max-width: 10em;
+  /* This is really to make sure there is space around  */
+  /* for the flex-center-space class above */
+}
+
+.flex-1 {
+  flex-grow: 1;
+  /* flex-shrink: 1; */
+}
+.flex-2 {
+  flex-grow: 2;
+  /* flex-shrink: 2; */
+}
+.flex-3 {
+  flex-grow: 3;
+  /* flex-shrink: 3; */
+}
+
+.left {
+  text-align: left;
+  align-items: left;
+  align-content: left;
+}
+.right {
+  text-align: right;
+  align-items: right;
+  align-content: right;
+}
+.center {
+  text-align: center;
+  align-items: center;
+  align-content: center;
+}
+
+
+
+.parralaxer {
+   background-image: url("http://fillmurray.com/800/600");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   height: 50vh;
+}
+
+
+.pop {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.pop:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+
+
+
+.spaced-items {
+  padding: 1em;
+}
+
+.spaced-items > :first-child {
+  margin-top: 3em;
+}
+
+.spaced-items > :last-child {
+  margin-bottom: 3em;
+}
+
+.spaced-items > * + * {
+  margin-top: 1em;
+}
+
+
+.shy  {
+ opacity: 0;
+ visibility: hidden;
+ transition: opacity 500ms, visibility 500ms;
+}
+
+.shy.is-active {
+ opacity: 1;
+ visibility: visible;
+}
+
+.truncated {
+    display: block;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.fullscreen {
+    min-height: 100vh;
+}

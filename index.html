@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="js/jquery.js" charset="utf-8"></script>
+  <script src="js/underscore.js" charset="utf-8"></script>
+  <script src="js/main.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/master.css">
+  <title>Document</title>
+</head>
+<body>
+
+
+
+  <nav >
+    <h2 class="left">Heading / Logo / Hamburger</h1>
+    <div class="center">
+      <ul class="flex-1">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Shop</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </div>
+    <h2 class="right">Heading / Logo / Hamburger</h1>
+
+  </nav>
+
+
+
+  <div class="container">
+
+
+
+
+
+    <div>
+      <h1>WDi26 - CSS Framework</h1>
+      <h2>Temporary design aids - turn off later...</h2>
+      <ul>
+        <li>By setting a background color we know immediately that the CSS is correctly linked to the HTML.</li>
+        <li>Setting all elements to have a red 1px solid border helps to see what elements are pklaced where, and if any overlapping is going on.</li>
+      </ul>
+
+    </div>
+
+
+
+    <div class="flex-center">
+      <div class="pop">
+        <p><strong>This section has class "flex-center"</strong> The elements inside are evenly distributed with no space between them.</p>
+        <p>This div (and the last one in the section) have the class of "pop", which makes them, well, "pop"</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div>
+        <p class="pop"><strong>This individual paragraph has the class of "pop". </strong>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, sint porro quas maiores accusamus tempora nobis. Laboriosam, error autem maxime totam dolores libero, soluta doloremque beatae delectus veniam, cupiditate hic?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+      <div class="pop">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ad, sint porro quas maiores accusamus tempora nobis. Laboriosam, error autem maxime totam dolores libero, soluta doloremque beatae delectus veniam, cupiditate hic?</p>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+
+    </div>
+
+
+
+    <div class="parralaxer">
+      <p>This section has class of "parallaxer". Don't pay any attention to the text in this section, the point here is to show a parralax background image which will stay in place as the screen scrolls up and down.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <div id="space-demo" class="space-around">
+      <p>This section is "space-around", which is like "flex-center" from above, but this one includes space between the elements. Refer to main css file to adjust whether you have "space-around" or "space-between".</p>
+      <p>"space-around" has half a space between the left of the container and the left most element (and half a space between the right of the container and the rightmost element). "space-between" puts the elements right up against the containing div.
+      </p>
+      <p>These paragraphs have been constrained to have a maximum width rather than fill all the available space. (Otherwise they will grow to fill all the available space).</p>
+      <p id="toggleSpace">Click this paragraph to toggle between "space-between" and "space-around" </p>
+    </div>
+    <div class="space-between">
+      <img src="http://fillmurray.com/400/400" alt=""/>
+      <div><img src="http://fillmurray.com/400/400" alt=""/>
+      <p>These two middle images are inside divs - which makes the flex flex differently to the ones on the sides which are loose in the main containing div</p></div>
+      <div><img src="http://fillmurray.com/400/300" alt=""/>
+      <p>These two middle images are inside divs - which makes the flex flex differently to the ones on the sides which are loose in the main containing div</p></div>
+      <img src="http://fillmurray.com/200/160" alt="I am limited to the size of my container" />
+    </div>
+
+    <div class="spaced-items">
+      <p>This section has class of "spaced-items" - this gives an extra margin abnove the first child and below the last.</p>
+      <p class="truncated">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      <p class="light">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+    <div>
+      <p>This section shows that all images will be constrained to a max of 100% of their containing element.</p>
+      <p>There is a <strong>hidden div</strong> below the image. To activate use jQuery <i>$('.shy').addClass('is-active')</i> - all elements with class "shy" are hidden until they are made active, by adding the class "is-active" </p>
+      <p>Click on the picture to toggle "is-active" on and off</p>
+      <img id="toggleShy" src="http://fillmurray.com/2000/1600" alt="I am limited to the size of my container" />
+      <p class="shy">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+    </div>
+
+    <div class="fullscreen">
+      <p>This class is "fullscreen" - it takes up 100% of available vertical height - 100vh</p>
+      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+    </div>
+
+  </div>
+
+</body>
+</html>
