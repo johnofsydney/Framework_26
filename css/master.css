@@ -5,64 +5,27 @@
   /* border: red solid 1px; */
 };
 
+/* Definitiions for HTML tags */
+
 html {
   box-sizing: border-box;
   padding: 0;
   margin: 0;
 }
 
-nav {
-  position:fixed;
-  /* These next two lines are most of what is defined below in
-  .space-between - They are here so that we dont have to use
-  .space-between, becuase we don't want the padding section for
-  that style  */
-  display: flex;
-  justify-content: space-between;
-
-  top: 0;
-  left: 0;
-  width: 100%;
-  background-color: rgba(0, 0, 0, 0.8);
-  color: white;
-  padding: 0;
-}
-
-nav li {
-  padding: 1em;
-}
-
-nav .left {
-  padding-left: 1em;
-  padding-top: 0.3em;
-}
-
-nav .right {
-  padding-right: 1em;
-    padding-top: 0.3em;
-}
-
-nav .center {
-  padding-top: 0.1em;
-}
-
 body {
   text-align: center;
   font-family: sans-serif;
+
 }
 
 ul {
   list-style: none;
 }
 
-nav ul {
-  padding: 0;
-  display: flex;
-}
-
-
 a {
   color: inherit;
+  text-decoration: none;
 }
 
 img {
@@ -73,20 +36,21 @@ p {
   text-align: left;
 }
 
+/* positioning classes (non navbar) */
 
 
 .container {
   width: calc(100% - 40px);
   max-width: 1200px;
   margin: 0 auto;
-  margin-top: 6em;
+  /* margin-top: 1em; */
 }
 
 .space-tight {
   /* the elements in this div will be mashed together */
   display: flex;
-  align-items: center;
-  justify-content: center;
+  align-items: left;
+  justify-content: left;
   padding: 1em;
 }
 
@@ -107,38 +71,42 @@ p {
   padding: 1em;
 }
 
-
+.col-1-1 {
+  width: 96%;
+  /* 96% */
+}
 .col-1-2 {
   width: 45%;
+  /* 90% */
+}
+.col-1-3 {
+  width: 28%;
+  /* 84% */
 }
 .col-1-4 {
   width: 20%;
+  /* 80% */
 }
 
-.row-1-4 {
-  height: 25vh;
+.row-1-1 {
+    min-height: 96vh;
 }
 
-
-
-
-#space-demo p {
-  max-width: 10em;
-  /* This is really to make sure there is space around  */
-  /* for the space-tight-space class above */
+.row-1-5 {
+  min-height: 20vh;
 }
 
 .flex-1 {
   flex-grow: 1;
-  /* flex-shrink: 1; */
+  flex-shrink: 1;
 }
 .flex-2 {
   flex-grow: 2;
-  /* flex-shrink: 2; */
+  flex-shrink: 2;
 }
 .flex-3 {
   flex-grow: 3;
-  /* flex-shrink: 3; */
+  flex-shrink: 3;
 }
 
 .left {
@@ -157,30 +125,6 @@ p {
   align-content: center;
 }
 
-
-
-.parralaxer {
-   background-image: url("http://fillmurray.com/800/600");
-   background-size: cover;
-   background-position: center;
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   height: 50vh;
-}
-
-
-.pop {
-  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
-}
-
-.pop:hover {
-  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-}
-
-
-
-
 .spaced-items {
   padding: 0.4em;
 }
@@ -198,10 +142,102 @@ p {
 }
 
 
+
+
+
+/* navbar settings */
+
+.nav-top {
+  position:fixed;
+  display: flex;
+  justify-content: space-between;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0;
+}
+
+.nav-top ul {
+  padding: 0;
+  display: flex;
+}
+
+.nav-top li {
+  padding: 1em;
+}
+
+.nav-top .left {
+  padding-left: 1em;
+  padding-top: 0.3em;
+}
+
+.nav-top .right {
+  padding-right: 1em;
+  padding-top: 0.3em;
+}
+
+.nav-top .center {
+  padding-top: 0.1em;
+}
+
+.title {
+  margin-bottom: 3em;
+}
+
+.title h1 {
+  padding-top: 45vh;
+}
+
+
+
+/* styling classes */
+
+.bg-dark-trans {
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+}
+
+.accent-line-2 {
+  border-bottom: 0.2em red solid;
+}
+.accent-line-3 {
+  border-right: 0.2em blue solid;
+}
+.accent-line-1 {
+  border-left: 0.2em gold solid;
+}
+.accent-line-4 {
+  border-top: 0.2em magenta solid;
+}
+
+.non-pop {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.pop {
+  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+  transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+.pop:hover {
+  box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+}
+
+.parrallaxer {
+   background-image: url("http://fillmurray.com/800/600");
+   background-size: cover;
+   background-position: center;
+   background-repeat: no-repeat;
+   background-attachment: fixed;
+   height: 50vh;
+}
+
+
 .shy  {
  opacity: 0;
  visibility: hidden;
- transition: opacity 500ms, visibility 500ms;
+ transition: opacity 1500ms, visibility 1500ms;
 }
 
 .shy.is-active {
@@ -214,24 +250,4 @@ p {
     white-space: nowrap;
     overflow: hidden;
     text-overflow: ellipsis;
-}
-
-.fullscreen {
-    min-height: 100vh;
-}
-
-.accent-line-1 {
-  border-bottom: 0.35em red solid;
-  border-top-left-radius: 0.7em;
-  border-top-right-radius: 0.7em;
-}
-.accent-line-2 {
-  border-right: 0.35em blue solid;
-  border-top-left-radius: 0.7em;
-  border-bottom-left-radius: 0.7em;
-}
-.accent-line-3 {
-  border-left: 0.35em gold solid;
-  border-bottom-right-radius: 0.7em;
-  border-top-right-radius: 0.7em;
 }

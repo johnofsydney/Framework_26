@@ -2,7 +2,7 @@
 
 ## A small html / css / javascript framework built by members of GA Sydney WDi26
 
-[https://johnofsydney.github.io/Framework_26/]
+https://johnofsydney.github.io/Framework_26/
 
 ### Aims
 - practice collaboration using Git / GitHub
