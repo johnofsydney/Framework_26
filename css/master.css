@@ -197,6 +197,13 @@ p {
   color: white;
 }
 
+.bg-light {
+  background-color: rgba(240, 240, 240, 1);
+  color: rgb(35,35,35);
+}
+
+
+
 .accent-line-2 {
   border-bottom: 0.2em red solid;
 }
