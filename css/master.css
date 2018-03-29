@@ -22,6 +22,7 @@ body {
 
 ul {
   list-style: none;
+  text-align: left;
 }
 
 a {
@@ -97,8 +98,9 @@ p {
   padding-right: 0;
   margin-left: 0;
   margin-right: 0;
-  /* 90% */
+  /* 92% */
 }
+
 .col-1-4 {
   width: 22%;
   padding-left: 0;
@@ -333,4 +335,26 @@ p {
   border: 2px solid white;
   background-color: white;
   border-radius: 100%;
+}
+
+
+
+
+
+/* For dev work, change for whatever */
+
+
+/*
+#background-image-1: {
+  background-image: url("../images/cover_art.jpg");
+  background-size: cover;
+  height: 60vh;
+  width: 100vw;
+  position: relative;
+  left: calc(-50vw + 50%);
+  background-color: red;
+} */
+
+#sydney {
+  background-image: url("../images/mapSydney.jpg");
 }
