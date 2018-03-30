@@ -16,13 +16,14 @@ html {
 }
 
 body {
-  text-align: center;
+  /* text-align: center; */
   font-family: sans-serif;
 }
 
 ul {
   list-style: none;
-  text-align: left;
+  padding-left: 0.5em;
+  /* text-align: left; */
 }
 
 a {
@@ -31,11 +32,11 @@ a {
 }
 
 img {
-  max-width: 100%;
+  width: 100%;
 }
 
 p {
-  text-align: left;
+  /* text-align: left; */
 }
 
 /* positioning classes (non navbar) */
@@ -54,9 +55,7 @@ p {
 .space-tight {
   /* the elements in this div will be mashed together */
   display: flex;
-  align-items: left;
   justify-content: left;
-  /* padding: 1em; */
 }
 
 .space-around {
@@ -65,7 +64,6 @@ p {
   and half a space on the right of all elements */
   display: flex;
   justify-content: space-around;
-  /* padding: 1em; */
 }
 
 .space-between {
@@ -73,7 +71,6 @@ p {
   there will be no space on left or right of all elements */
   display: flex;
   justify-content: space-between;
-  /* padding: 1em; */
 }
 
 .col-1-1 {
@@ -140,16 +137,19 @@ p {
   text-align: left;
   align-items: left;
   align-content: left;
+  justify-content: left;
 }
 .right {
   text-align: right;
-  align-items: right;
+  /* align-items: right; */
   align-content: right;
+  justify-content: flex-end;
 }
 .center {
   text-align: center;
-  align-items: center;
+  /* align-items: center; */
   align-content: center;
+  justify-content: center;
 }
 
 .spaced-items {
@@ -267,6 +267,10 @@ p {
   background-color: blue;
   color: white;
 }
+.accent-3 {
+  background-color: red;
+  color: white;
+}
 .accent-line-1 {
   border-top: 0.2em magenta solid;
 }
@@ -332,13 +336,15 @@ p {
   position: absolute;
   width: 10em;
   height: 10em;
-  border: 2px solid white;
+  /* border: 2px solid white; */
   background-color: white;
   border-radius: 100%;
 }
 
 
-
+.shuffle {
+  
+}
 
 
 /* For dev work, change for whatever */

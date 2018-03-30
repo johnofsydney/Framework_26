@@ -8,9 +8,7 @@ const buzzFizz = function ( $fizzDiv ) {
   let divTop = $fizzDiv.position().top
   let divWidth = $fizzDiv.width();
   let divHeight = $fizzDiv.height();
-  let divBottom = $fizzDiv.position().top + divHeight
-
-  // console.log(left, bottom);
+  let divBottom = $fizzDiv.position().top + divHeight;
 
   let x = (Math.random() * divWidth) + divLeft;
   const size = (Math.random() * 0.5) + 'em';
@@ -22,42 +20,11 @@ const buzzFizz = function ( $fizzDiv ) {
     height: size
   }).appendTo($fizzDiv);
 
-  // debugger;
 
   $bubble.animate({top: divTop}, 3000, function () {
     $bubble.remove(); // Clean up after ourselves to conserve memory.
-
   });
-
-
 }
-
-
-
-
-
-// $(window).on('mousemove', function (e) {
-//   const {pageX: x, pageY: y} = e; // Destructuring
-//
-//   const size = (Math.random() * 10) + 'em';
-//
-//   const $bubble = $('<div class="bubble"></div>').css({
-//     left: x,
-//     top: y,
-//     width: size,
-//     height: size
-//   }).appendTo($body);
-//
-//   $bubble.animate({top: -200}, 3000, function () {
-//     $bubble.remove(); // Clean up after ourselves to conserve memory.
-//   });
-// });
-
-
-
-
-
-
 
 
 const fizzBuzz = function () {
@@ -70,11 +37,41 @@ const fizzBuzz = function () {
 }
 
 
+
+const shuffleWord = function () {
+
+  currentTextArray = $('.shuffle p').text().split('')
+
+
+  // let last = currentTextArray.pop()
+  // currentTextArray.unshift(last)
+  // newText = currentTextArray.join("")
+
+  a = Math.floor(Math.random() * currentTextArray.length)
+  b = Math.floor(Math.random() * currentTextArray.length)
+
+
+  let letter1 = currentTextArray.splice(a, 1)
+  currentTextArray.unshift(letter1)
+  let letter2 = currentTextArray.splice(b, 1)
+  currentTextArray.push(letter2)
+
+  newText = currentTextArray.join("")
+
+  // debugger;
+  $('.shuffle p').text(newText)
+
+
+}
+
+
+
 $(document).ready( function() {
 
   console.log("ready");
 
   const fizzTimeDone = window.setInterval(fizzBuzz, 200);
+  const shuffleTimeDone = window.setInterval(shuffleWord, 2000);
 
 
 
