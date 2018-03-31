@@ -62,7 +62,7 @@ const cycleCSS = function () {
 
 
 
-  let styles = ["css/red-cat.css", "css/theme.css", "css/master.css"]
+  let styles = ["css/master.css", "css/theme.css", "css/red-cat.css"]
   state.styleCounter = state.styleCounter + 1;
   if (state.styleCounter >= styles.length) {
     state.styleCounter = 0
