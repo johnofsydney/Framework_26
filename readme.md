@@ -15,8 +15,8 @@ https://johnofsydney.github.io/Framework_26/
 ### To Do
 - media queries to crunch nav bar to hamburger menu for phone sized screen
 - naming convention
-- color themes (color variables)
-- font themes
+- ~~color variables~~
+- ~~themes~~ Example themes done, add more as desired
 - refactor
 - split up the example page into several smaller more focused pages. add instructions.
 
