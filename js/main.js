@@ -1,5 +1,7 @@
 console.log("connected");
-
+let state = {
+  styleCounter: 0
+};
 
 
 const buzzFizz = function ( $fizzDiv ) {
@@ -40,14 +42,53 @@ const fizzBuzz = function () {
 
 const shuffleDivs = function () {
 
-
 }
 
+
+const cycleCSS = function () {
+  // console.log("cycling now");
+
+  $('<link/>', {
+     rel: 'stylesheet',
+     type: 'text/css',
+     href: 'css/normalize.css'
+  }).appendTo('head');
+  $('<link/>', {
+     rel: 'stylesheet',
+     type: 'text/css',
+     href: 'css/master.css'
+  }).appendTo('head');
+
+
+
+
+  let styles = ["css/red-cat.css", "css/theme.css", "css/master.css"]
+  state.styleCounter = state.styleCounter + 1;
+  if (state.styleCounter >= styles.length) {
+    state.styleCounter = 0
+  }
+
+    var link = document.createElement("link");
+    link.rel = "stylesheet";
+    link.type = "text/css";
+    link.href = styles[state.styleCounter];
+
+    $('head').append(link)
+    // console.log(state.styleCounter);
+    // console.log(link.href);
+
+}
 
 
 $(document).ready( function() {
 
   console.log("ready");
+
+  $('.cycler').on('click', function () {
+    cycleCSS()
+
+  });
+
 
   const fizzTimeDone = window.setInterval(fizzBuzz, 200);
   // const shuffleTimeDone = window.setInterval(shuffleDivs, 5000);
