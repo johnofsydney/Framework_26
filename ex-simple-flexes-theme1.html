@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <script src="js/jquery.js" charset="utf-8"></script>
+  <script src="js/underscore.js" charset="utf-8"></script>
+  <script src="js/main.js" charset="utf-8"></script>
+  <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/master.css">
+  <link rel="stylesheet" href="css/theme.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <div class="container bg-dark">
+    <div class="col-1-1">
+      <h2>FLexbox Layout examples</h2>
+      <ul>
+        <li>The first element is <span class="accent-1">.container .bg-dark</span></li>
+        <li><span class="accent-1">.container</span> centres the content in the screen, with margins for larger screens.</li>
+        <li><span class="accent-1">.bg-dark</span> sets the color of ther background and font.</li>
+
+      </ul>
+    </div>
+
+
+
+    <div id="background-image-1" class="space-between bg-white">
+
+      <div class="pop col-1-3 bg-dark-trans">
+        <p>The container for this set of three is <span class="accent-2">.space-between .bg-white</span></p>
+        <ul>
+          <li><span class="accent-2">.space-between</span> is a flex container, filling 100% of it's container.</li>
+          <li>It has no margin between itself and it's container and it has no internal padding to space it's leftmost and rightmost, topmost and bottom-most elements away from it's edges</li>
+        </ul>
+        <ul>
+          <li><span class="accent-2">.bg-white</span> sets the background-color to solid white, and the font color to dark.</li>
+        </ul>
+        <p>This element has class <span class="accent-1">.pop .col-1-3 .bg-dark-trans</span></p>
+        <ul>
+          <li><span class=".accent-1">.bg-dark-trans</span> sets a dark background and light font color combination.</li>
+          <li>Opacity 70%</li>
+        </ul>
+
+      </div>
+      <div class="pop col-1-3">
+        <p>This element has class <span class="accent-1">.pop .col-1-3</span></p>
+        <ul>
+          <li><span class=".accent-1">.pop</span> provides the shadow and pops the shadow on mouse over.</li>
+        </ul>
+        <ul>
+          <li><span class="accent-1">.col-1-3</span> is the most important, setting a max-width of 30%, which is great for columns.</li>
+          <li>It collapses fine for smaller screens.</li>
+          <li>images resize with screen size</li>
+        </ul>
+        <ul>
+          <li>These div and then one the right have no background-color or font color settings.</li>
+        </ul>
+      </div>
+      <div class="pop col-1-3">
+        <p>This element has class <span class="accent-1">.pop .col-1-3</span></p>
+        <img src="http://placekitten.com/g/300/300" alt="">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+      </div>
+    </div>
+
+    <div id="background-image-1" class="space-around bg-white">
+
+      <div class="pop col-1-3 bg-dark-trans">
+        <p>The container for this set of three is <span class="accent-2">.space-around .bg-white</span></p>
+        <ul>
+          <li><span class="accent-2">.space-around</span> is a flex container, filling 100% of it's container.</li>
+          <li>It has no margin between itself and it's container</li>
+          <li>the gap between the elements and the container and the other elements is the same.</li>
+        </ul>
+
+
+      </div>
+      <div class="pop col-1-3">
+        <p>This element has class <span class="accent-1">.pop .col-1-3</span></p>
+      </div>
+      <div class="pop col-1-3">
+        <p>This element has class <span class="accent-1">.pop .col-1-3</span></p>
+      </div>
+    </div>
+
+    <div class="space-tight">
+      <div class="col-1-4">
+        <p>This element is in a container named <span class="accent-2">.space-tight</span></p>
+        <p>This is a flexbox which squeezes all it's elements together with no space. BY default it's elements will be aligned to the left.</p>
+      </div>
+      <div class="col-1-4">
+        <p>Each of the elements within has class of <span class="accent-1">.col-1-4</span></p>
+        <p>The black in the background is from the <span class="accent-2">.container</span></p>
+      </div>
+      <div class="col-1-4"><img src="http://placekitten.com/g/300/300" alt=""></div>
+    </div>
+
+    <div class="space-tight right bg-white">
+      <div class="col-1-4 non-pop">
+        <p>This element is in a container named <span class="accent-2">.space-tight .right .bg-white</span></p>
+        <p>So it's the same as above but aligned to the right and colored.</p>
+      </div>
+      <div class="col-1-4 non-pop">
+        <p>Each of the elements within has class of <span class="accent-1">.col-1-4 .non-pop</span></p>
+        <p>The black in the background is from the <span class="accent-2">.container</span></p>
+        <ul>
+          <li>lorem</li>
+          <li>lorem</li>
+          <li>lorem</li>
+        </ul>
+      </div>
+      <div class="col-1-4 non-pop"><img src="http://placekitten.com/g/300/300" alt=""></div>
+    </div>
+
+    <div class="space-tight center bg-white">
+      <div class="col-1-4 non-pop">
+        <p>This element is in a container named <span class="accent-2">.space-tight .center .bg-white</span></p>
+        <p>So it's the same as above but aligned to the center.</p>
+      </div>
+      <div class="col-1-4 non-pop">
+        <p>Each of the elements within has class of <span class="accent-1">.col-1-4 .non-pop</span></p>
+        <p>The black in the background is from the <span class="accent-2">.container</span></p>
+        <ul>
+          <li>lorem</li>
+          <li>lorem</li>
+          <li>lorem</li>
+        </ul>
+      </div>
+      <div class="col-1-4 non-pop"><img src="http://placekitten.com/g/300/300" alt=""></div>
+    </div>
+
+    <div class="space-between">
+      <img src="http://placekitten.com/g/200/200" alt=""/>
+      <div><img src="http://placekitten.com/g/200/200" alt=""/>
+      <p>This container is <span class="accent-2">.space-between</span></p>
+      <p>The two images on the left are both 200 x 200px, the two on the right are both 400 x 200px</p>
+      <p>The elements within have no classes. The outside ones are plain old img and the inside two are img within div.</p>
+      <p>All <span class="accent-3">img</span> tags have a width: 100%; so they will entirely fill their container, whatever their actual size.</p>
+      <p>The only width information comes from the content of the element;</p>
+      <ul class="spaced-items">
+        <li>For the outside elements which are loose <span class="accent-3">img</span> tags, the width is the natura width of the image.</li>
+        <li>For the inside elements which are <span class="accent-3">divs</span> with <span class="accent-3">img</span> and <span class="accent-3">p</span> inside the width is determined by the other elements inside, in particular this text is what is stretching this colukn and making the smaller 200 x 200px cat  appear larger than the 400 x 200px cat. </li>
+      </ul>
+
+      <p>Both the outside images will distort as you change screen size</p>
+      </div>
+
+      <div><img src="http://placekitten.com/g/400/200" alt=""/>
+      <p></p></div>
+      <img src="http://placekitten.com/g/400/200" alt="I am limited to the size of my container" />
+    </div>
+
+
+  </div>  <!-- end of container -->
+</body>
+</html>

@@ -38,28 +38,7 @@ const fizzBuzz = function () {
 
 
 
-const shuffleWord = function () {
-
-  currentTextArray = $('.shuffle p').text().split('')
-
-
-  // let last = currentTextArray.pop()
-  // currentTextArray.unshift(last)
-  // newText = currentTextArray.join("")
-
-  a = Math.floor(Math.random() * currentTextArray.length)
-  b = Math.floor(Math.random() * currentTextArray.length)
-
-
-  let letter1 = currentTextArray.splice(a, 1)
-  currentTextArray.unshift(letter1)
-  let letter2 = currentTextArray.splice(b, 1)
-  currentTextArray.push(letter2)
-
-  newText = currentTextArray.join("")
-
-  // debugger;
-  $('.shuffle p').text(newText)
+const shuffleDivs = function () {
 
 
 }
@@ -71,7 +50,7 @@ $(document).ready( function() {
   console.log("ready");
 
   const fizzTimeDone = window.setInterval(fizzBuzz, 200);
-  const shuffleTimeDone = window.setInterval(shuffleWord, 2000);
+  // const shuffleTimeDone = window.setInterval(shuffleDivs, 5000);
 
 
 
