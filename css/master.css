@@ -22,13 +22,14 @@
 * {
   /* Uncomment line below for designing layout; */
   /* border: red solid 1px; */
+    box-sizing: border-box;
 };
 
 
 /* Definitiions for HTML tags */
 
 html {
-  box-sizing: border-box;
+
   padding: 0;
   margin: 0;
 }
